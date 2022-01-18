@@ -42,3 +42,21 @@ h4{
     padding-left: 1.3rem;
 }
 
+/* girl */
+.jumbotron1 {
+    background: url(./picturesGirls/girlJumbotron.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+/* baby */
+.jumbotron2 {
+    background: url(./picturesGirls/babyJumbotron.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+/* boy */
+.jumbotron3 {
+    background: url(./picturesGirls/boysJumbotron.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
