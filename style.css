@@ -8,18 +8,9 @@ color: black;
   margin-bottom: 45px;
 }
 
-.bg-1{
-
+.card{
+  height: 60vmax;
 }
-
-.bg-2{
-
-}
-
-.bg-3{
-
-}
-
 .bg-4{
   background-color:rgb(55, 176, 206);
   color: white;
@@ -104,7 +95,10 @@ color: black;
 }
 
 .carousel{
-  height: 60vh;
+  height: 50em;
+}
+.d-block{
+  height: 50em;
 }
 
 
@@ -116,9 +110,28 @@ color: black;
   background-color: blueviolet;
 }
 
-.footer{
+.footer {
     padding: 20px;
     text-align: center;
     color: white;
     background: blueviolet;
+}
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
 }
