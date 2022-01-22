@@ -8,18 +8,9 @@ color: black;
   margin-bottom: 45px;
 }
 
-.bg-1{
-
+.card{
+  height: 60vmax;
 }
-
-.bg-2{
-
-}
-
-.bg-3{
-
-}
-
 .bg-4{
   background-color:rgb(55, 176, 206);
   color: white;
@@ -125,7 +116,6 @@ color: black;
     color: white;
     background: blueviolet;
 }
-
 /* unvisited link */
 a:link {
   color: black;
