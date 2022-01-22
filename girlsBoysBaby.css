@@ -6,8 +6,10 @@
 }
 .card{
     display: flex;
-} */
-
+} 
+body{
+    font-family: fakt-web,Helvetica Neue,Hevetica,sans-serif;
+}*/
 .bg-col{
     background-color:  rgb(245,194,88);
     /* position: fixed ; */
