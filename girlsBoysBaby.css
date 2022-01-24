@@ -62,3 +62,14 @@ h4{
     background-size: cover;
     height: 100vh;
 }
+.jumbotron4 {
+    background: url(./picturesGirls/VDAY_3x.jpeg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+ 
+.jumbotron5 {
+    background: url(./picturesGirls/Clearance.jpeg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
