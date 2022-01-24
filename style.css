@@ -79,12 +79,13 @@ color: black;
     border: 0;
     border-radius: 0;
     border-bottom: 0;
-    font-size: 14px;
+    font-size: 20px;
     letter-spacing: 4px;
 }
 
 .navbar li a, .navbar .navbar-brand{
   color:rgb(55, 176, 206);
+  
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a{
@@ -95,6 +96,7 @@ color: black;
     border-color: transparent;
     color: blueviolet;
 }
+
 
 .carousel{
   height: 50em;
