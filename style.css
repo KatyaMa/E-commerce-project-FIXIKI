@@ -13,9 +13,16 @@ color: black;
 } 
 
 .card{
-  height: 60vmax;
+  height: 35em;
+
   margin: 4%;
 }
+.cardImage{
+  height: 100%;
+  width: auto;
+  border: 1.5em solid white;
+  object-fit: cover; 
+ }
 
 
 
@@ -31,10 +38,7 @@ color: black;
   
 }
 
-.cardImage{
- height: 100%;
-  
-}
+
 
 .loader {
     border-top: 16px solid rgb(111, 111, 168);
@@ -143,7 +147,7 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: green;
+  color: purple;
 }
 
 /* mouse over link */
