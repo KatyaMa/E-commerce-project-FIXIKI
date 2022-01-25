@@ -15,13 +15,17 @@ color: black;
 .card{
   height: 35em;
   margin: 4%;
+  max-width: 35em;
 }
 .cardImage{
   height: 100%;
   width: auto;
   /* border: 1.5em solid white; */
   object-fit: cover; 
-  align-self: start;
+  max-width: 32rem ;
+  min-width: 15rem;
+  
+ 
 
  }
 
