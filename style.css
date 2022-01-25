@@ -86,7 +86,7 @@ color: black;
   
   
 .navbar{
-    background-color: linear-gradient(to right,pink, lightblue);
+    background-image: linear-gradient(to right,rgb(253, 141, 253), rgb(184, 248, 248))
     padding-top: 15px;
     padding-bottom: 15px;
     border: 0;
