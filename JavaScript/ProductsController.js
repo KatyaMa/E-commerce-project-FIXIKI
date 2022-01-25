@@ -6,7 +6,7 @@ class ProductController {
         this.currentId = currentId;
     }
 
-    // Create the addProduct method
+    // Create the addProduct method 
     addProduct(type, img, name, size, price, quantity) {
         const product = {
             // Increment the currentId property
@@ -21,6 +21,8 @@ class ProductController {
 
         // Push the item to the items property
         this.save(product);
+        this.saveGirlsTops(product);
+        this.saveGirlsBottoms(product);
 
         //Save products to local storage
        // localStorage.setProduct("products", JSON.stringify(this.products));
@@ -28,7 +30,7 @@ class ProductController {
        // this.uploadProducts({type, img, name, size, price, quantity});
     }
 
-
+// for all products
     save({type, img, name, size, price, quantity}){
         const data = { type, img, name, size, price, quantity };
 
@@ -59,4 +61,52 @@ class ProductController {
     findById(productId){
         //TODO implement this method
     }
+
+
+// section for girls tops
+saveGirlsTops({type, img, name, size, price, quantity}){
+    const data = { type, img, name, size, price, quantity };
+
+    fetch('http://localhost:8080/products/type/GIRLSTOPS', {
+    method: 'POST', // or 'PUT'
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(data => {
+    console.log('Success:', data);
+    })
+    .catch((error) => {
+    console.error('Error:', error);
+    });
+}
+
+
+
+// section for girls bottoms
+saveGirlsBottoms({type, img, name, size, price, quantity}){
+    const data = { type, img, name, size, price, quantity };
+
+    fetch('http://localhost:8080/products/type/GIRLSBOTTOMS', {
+    method: 'POST', // or 'PUT'
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(data => {
+    console.log('Success:', data);
+    })
+    .catch((error) => {
+    console.error('Error:', error);
+    });
+}
+
+
+
+
+
 }

@@ -1,6 +1,5 @@
 // Get initial movies
 const main = document.getElementById('main');
-const mainGirls = document.getElementById('mainGirls');
 
 getProducts("http://localhost:8080/products")
 
