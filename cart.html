@@ -6,66 +6,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shopping Cart</title>
   <link rel="icon" type="image/png" href="Fixik.png" sizes="16x16">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel='stylesheet' href='./style_cart.css'>
-  <link href="/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+
+
 <body>
 
    <!--Row for header-->
 
    <header>
-    <div class="jumbotron4 jumbotron-fluid">
-      <div class="container-f">
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(174,218,229,255); opacity: 0.9;">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">CART</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Girls.html">GIRLS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Boys.html">BOYS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Baby.html">BABY</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./productAll.html">ALL COLLECTION</a>
-                </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right ">
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-              <li class="nav-item">
-                  <a class="login-icon nav-link" href="login.html">LOGIN</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="cart-icon nav-link" href="cart.html"> CART</a>
-                </li>
-                </ul> 
-            </div>
-          </div>
-        </nav>
-
+    <nav class="navbar navbar-expand-lg navbar-light" >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="/logo.png" class="logo" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="Girls.html">GIRLS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Boys.html">BOYS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Baby.html">BABY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productAll.html">ALL COLLECTION</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item">
+              <a class="login-icon nav-link" href="login.html"><i class="fa fa-user"></i>LOGIN</a>
+            </li>
+            <li class="nav-item">
+              <a class="cart-icon nav-link" href="cart.html"><i class="fa fa-shopping-cart"></i>CART</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
 
   </header>
 
 
-  <div class='container-fluid'>
+  <div class='cart'>
 
    
     <!--row for main content-->
@@ -197,8 +193,8 @@
 
   </div>
 
-  <footer class="raw; text-center " style="padding: 20% auto; background-color: rgba(62,46,34,255);">
-    <h1  style="color: pink; padding: 4%">FIXIKI Kids</h1>
+  <footer class="raw; text-center " >
+    <!-- <h1  style="color: pink; padding: 4%">FIXIKI Kids</h1> -->
     <h2  style="background-color: pink; color: black; padding: 0.7% ;">FREE SHIPPING on Every Purchase 24/7/365!</h2>
     <img  style="width: 100% ; margin: 2% auto 5%;" src="./picturesGirls/allGirlsWidth.gif">
 
