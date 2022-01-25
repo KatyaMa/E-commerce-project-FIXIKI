@@ -14,7 +14,6 @@ color: black;
 
 .card{
   height: 35em;
-
   margin: 4%;
 }
 .cardImage{
@@ -22,6 +21,8 @@ color: black;
   width: auto;
   /* border: 1.5em solid white; */
   object-fit: cover; 
+  align-self: start;
+
  }
 
 
