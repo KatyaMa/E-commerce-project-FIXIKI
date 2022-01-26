@@ -44,7 +44,7 @@ color: black;
 }
 
 
-
+/* 
 .loader {
     border-top: 16px solid rgb(111, 111, 168);
     border-right: 16px solid rgb(55, 176, 206);
@@ -62,7 +62,7 @@ color: black;
   border-top: 16px solid #3498db;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
-  }
+  } */
 
   @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
