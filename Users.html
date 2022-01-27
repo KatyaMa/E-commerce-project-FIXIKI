@@ -55,6 +55,16 @@
   </nav>
 </header>
 
+
+    <div>
+      <form th:action = "@{/logout}" method = "post">
+          <p>
+            Welcome, <b>[[${#request.userPrincipal.principal.fullName}]]</b>
+          </p>
+          <input type="submit" value="Sign Out"/>
+      </form>
+
+    </div>
     <div class="container text-center">
       <h2>List of all users</h2>
     </div>
