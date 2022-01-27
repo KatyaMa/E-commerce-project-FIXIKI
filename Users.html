@@ -55,11 +55,12 @@
   </nav>
 </header>
 
-
-    <div>
+<div id="main" style="display: flex; flex-wrap: wrap; margin: 5% 10%;"></div>
+<!-- 
+    <div class= "row-cols-6">
       <form th:action = "@{/logout}" method = "post">
           <p>
-            Welcome, <b>[[${#request.userPrincipal.principal.fullName}]]</b>
+            Welcome
           </p>
           <input type="submit" value="Sign Out"/>
       </form>
@@ -88,7 +89,7 @@
 
         </tbody>
       </table>
-    </div>
+    </div> -->
 
   <!--- Footer --->
 
@@ -114,5 +115,8 @@
       <p style="padding: 2%; color: white;">&copy; FIXIKI Kids 2022</p>
    
   </footer>    
+
+  <!-- <script src="JavaScript/Users.js"></script> -->
+
 </body>
 </html>
