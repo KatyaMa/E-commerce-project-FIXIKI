@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <link href="login.css" rel="stylesheet">
+    <link href="/login.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -19,20 +19,20 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: pink;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="logo.png" class="logo" alt="logo"></a>
+      <a class="navbar-brand" href="index.html"><img src="/logo.png" class="logo" alt="logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="girls.html">GIRLS</a>
+            <a class="nav-link" href="Girls.html">GIRLS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="boys.html">BOYS</a>
+            <a class="nav-link" href="Boys.html">BOYS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="baby.html">BABY</a>
+            <a class="nav-link" href="Baby.html">BABY</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="productAll.html">ALL COLLECTION</a>
@@ -56,28 +56,8 @@
 </header>
 
     <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="col-sm-6 col-md-4 col-md-offset-4">
-                <br>
-                <h5 class="text-center login-title">Login to Your Account</h5>
-                <div class="account-wall">
-                    <form class="form-signin">
-                    <br>
-                    <label class="mail" >Email :</label>
-                    <input type="text" class="form-control" placeholder="email@example.com" required autofocus>
-                    <br>
-                    <label class="pass">Password :</label>
-                    <input type="password" class="form-control" placeholder="Password" required>
-                    <br>
-                    <div class="col text-center">
-                    <a button class="btn  btn-lg btn-block " type="submit" href="index.html">
-                        Login</button></a>
-                    <p class="or"> or <p>
-                        <a button class="btn btn-lg btn-block" th:href="@{/registration}" >Create an account </a>
-                    </div></form>
-                </div>
-            </div>
-        </div>
+       <h3>You have successfully registered! </h3>
+       <h4><a th:href="@{/Login}">Click here to login</a></h4>
     </div>
 
   <!--- Footer --->
@@ -89,16 +69,16 @@
 
  <br><br>
 
-      <a style="color: white;" href ="girls.html">Shop Girl     |</a>
-      <a style="color: white;" href ="boys.html">Shop Boys     |</a>
-      <a style="color: white;" href ="baby.html">Shop Baby |</a>
-      <a style="color: white;" href ="productAll.html">Shop All Products</a>
+      <a style="color: white;" href ="./girls.html">Shop Girl     |</a>
+      <a style="color: white;" href ="./boys.html">Shop Boys     |</a>
+      <a style="color: white;" href ="./baby.html">Shop Baby |</a>
+      <a style="color: white;" href ="./productAll.html">Shop All Products</a>
 
       <br>
       <br>
       <a style="color: white;" href ="about.html">About Us     |</a>
       <a style="color: white;" href ="contact.html">Contact Us     |</a>
-      <a style="color: white;" href ="item-form.html">Admin page</a>
+      <a style="color: white;" href ="./item-form.html">Admin page</a>
    
      
       <p style="padding: 2%; color: white;">&copy; FIXIKI Kids 2022</p>
