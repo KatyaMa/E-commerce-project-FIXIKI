@@ -21,7 +21,7 @@
    <!--Row for header-->
 
    <header>
-    <nav class="navbar navbar-expand-lg navbar-light" >
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: pink;">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img src="/logo.png" class="logo" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +57,6 @@
         </div>
       </div>
     </nav>
-
   </header>
 
 
@@ -66,141 +65,270 @@
    
     <!--row for main content-->
     <main>
-      <!--row for item1-->
-
-      <div id="cartItem" style="display: flex; flex-wrap: wrap;"></div>
-      <!-- margin: 3% 2%; -->
-
-
-      <div class='row item1 m-2 border_thick'>
-        <div class='col picture'>
-          <img src='./images_cart/dress.jpeg' alt='dress' class='img-fluid border border-dark'>
-        </div>
-        <div class='col name'>
-          <u><h2>Dress</h2></u>
-        </div>
-        <div class='col price'>
-          <div class='row'>
-            <h2>Price per unit</h2>
-          </div>
-          <div class='row'>
-            <h2>$2</h2>
-          </div>
-        </div>
-        <div class='col quantity'>
-          <div class='row'>
-            <h2>Quantity</h2>
-          </div>
-          <div class='row'>
-            <h2>3</h2>
-          </div>
-        </div>
-        <div class='col total_price'>
-          <div class='row'>
-            <h2>Total price: $7 ($2*3 + $1)</h2>
-          </div>
-          <div class='row shipping price'>
-            <h2>Shipping price: $1</h2>
-          </div>
-        </div>
-        <div class='col delete_item'>
-          <button type='button'><h2>Delete</h2></button>
-        </div>
-      </div>
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+      <div class="container">
+      <div class="wrapper wrapper-content animated fadeInRight">
+          <div class="row">
+              <div class="col-md-9">
+                  <div class="ibox">
+                      <div class="ibox-title">
+                          <span class="pull-right">(<strong>4</strong>) items</span>
+                          <h5>Items in your cart</h5>
+                      </div>
+                      <div class="ibox-content">
+                          <div class="table-responsive">
+                              <table class="table shoping-cart-table">
+                                  <tbody>
+                                  <tr>
+                                      <td width="90">
+                                          <div class="cart-product-imitation">
+                                          </div>
+                                      </td>
+                                      <td class="desc">
+                                          <h3>
+                                          <a href="./picturesGirls/girlsPic1.jpg" class="text-navy">
+                                            Girls Embroidered Ruffle Top
+                                          </a>
+                                          </h3>
+                                          <p class="small">
+                                            THE COLLECTION FEATURES MULTIPLE FITS AND FINISHES. THE PERFECT FOUNDATION PIECE FOR CASUAL OUTFITS, OUR T-SHIRTS ARE COMFORTABLE AND SOFT. 
+                                          </p>
+                                    
       
-      <!--row for item2-->
-      <div class='row item2 m-2 border_thick'>
-        <div class='col picture'>
-          <img src='./images_cart/shorts.jpeg' alt='short' class='img-fluid border border-dark'>
-        </div>
-        <div class='col name'>
-          <u><h2>Short</h2></u>
-        </div>
-        <div class='col price'>
-          <div class='row'>
-            <h2>Price per unit</h2>
-          </div>
-          <div class='row'>
-            <h2>$1</h2>
-          </div>
-        </div>
-        <div class='col quantity'>
-          <div class='row'>
-            <h2>Quantity</h2>
-          </div>
-          <div class='row'>
-            <h2>2</h2>
-          </div>
-        </div>
-        <div class='col total_price'>
-          <div class='row'>
-            <h2>Total price: $4 ($1*2 + $2)</h2>
-          </div>
-          <div class='row shipping price'>
-            <h2>Shipping price: $2</h2>
-          </div>
-        </div>
-        <div class='col delete_item'>
-          <button type='button'><h2>Delete</h2></button>
-        </div>
-      </div>
-  
-  
-      <!--row for item3-->
-      <div class='row item3 m-2 border_thick'>
-        <div class='col picture'>
-          <img src='./images_cart/top.jpeg' alt='top' class='img-fluid border border-dark'>
-        </div>
-        <div class='col name'>
-          <u><h2>Top</h2></u>
-        </div>
-        <div class='col price'>
-          <div class='row'>
-            <h2>Price per unit</h2>
-          </div>
-          <div class='row'>
-            <h2>$0.5</h2>
-          </div>
-        </div>
-        <div class='col quantity'>
-          <div class='row'>
-            <h2>Quantity</h2>
-          </div>
-          <div class='row'>
-            <h2>6</h2>
-          </div>
-        </div>
-        <div class='col total_price'>
-          <div class='row'>
-            <h2>Total price: $5 ($0.5*6 + $2)</h2>
-          </div>
-          <div class='row shipping price'>
-            <h2>Shipping price: $2</h2>
-          </div>
-        </div>
-        <div class='col delete_item'>
-          <button type='button'><h2>Delete</h2></button>
-        </div>
-      </div>
-      <br />
+                                          <div class="m-t-sm">
+                                              
+                                              <a href="#" class="text-muted"><i class="fa fa-trash"></i> Remove item</a>
+                                          </div>
+                                      </td>
       
-      <!--row for button-->
-      <div class='row button m-2'>
-        <div class='col-3'>
-          <button type='button'><h2>Delete all items</h2></button>
-        </div>
-        <div class='col-3'>
-          <button type='button'><h2>Checkout</h2></button>
-        </div>
+                                      <td>
+                                          $35,97
+                                      </td>
+                                      <td width="65">
+                                          <input type="text" class="form-control" placeholder="1">
+                                      </td>
+                                      <td>
+                                          <h4>
+                                            $35,97
+                                          </h4>
+                                      </td>
+                                  </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+      
+                      </div>
+                      <div class="ibox-content">
+                          <div class="table-responsive">
+                              <table class="table shoping-cart-table">
+      
+                                  <tbody>
+                                  <tr>
+                                      <td width="90">
+                                          <div class="cart-product-imitation">
+                                          </div>
+                                      </td>
+                                      <td class="desc">
+                                          <h3>
+                                              <a href="./picture boys/baby/babyBoy3.jpg" class="text-navy">
+                                                Baby Boy's outfit
+                                              </a>
+                                          </h3>
+                                          <p class="small">
+                                            THE COLLECTION FEATURES MULTIPLE FITS AND FINISHES. THE PERFECT FOUNDATION PIECE FOR CASUAL OUTFITS, OUR T-SHIRTS ARE COMFORTABLE AND SOFT.
+                                          </p>
+                       
+                                          <div class="m-t-sm">
+                                              
+                                              <a href="#" class="text-muted"><i class="fa fa-trash"></i> Remove item</a>
+                                          </div>
+                                      </td>
+      
+                                      <td>
+                                          $37,98
+                                      </td>
+                                      <td width="65">
+                                          <input type="text" class="form-control" placeholder="2">
+                                      </td>
+                                      <td>
+                                          <h4>
+                                            $37,98
+                                          </h4>
+                                      </td>
+      
+                                  </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+      
+                      </div>
+                      <div class="ibox-content">
+                          <div class="table-responsive">
+                              <table class="table shoping-cart-table">
+      
+                                  <tbody>
+                                  <tr>
+                                      <td width="90">
+                                          <div class="cart-product-imitation">
+                                          </div>
+                                      </td>
+                                      <td class="desc">
+                                          <h3>
+                                              <a href="./picture boys/baby/boyAccessories4.jpg" class="text-navy">
+                                                Boy's Shoes
+                                              </a>
+                                          </h3>
+                                          <p class="small">
+                                            THE COLLECTION FEATURES MULTIPLE FITS AND FINISHES. THE PERFECT FOUNDATION PIECE FOR CASUAL OUTFITS, OUR T-SHIRTS ARE COMFORTABLE AND SOFT. </p>
+                                      
+                                          <div class="m-t-sm">
+                                              
+                                              <a href="#" class="text-muted"><i class="fa fa-trash"></i> Remove item</a>
+                                          </div>
+                                      </td>
+      
+                                      <td>
+                                          $17,98
+                                      </td>
+                                      <td width="65">
+                                          <input type="text" class="form-control" placeholder="1">
+                                      </td>
+                                      <td>
+                                          <h4>
+                                              $17,98
+                                          </h4>
+                                      </td>
+      
+                                  </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+      
+                      </div>
+                      <div class="ibox-content">
+                          <div class="table-responsive">
+                              <table class="table shoping-cart-table">
+      
+                                  <tbody>
+                                  <tr>
+                                      <td width="90">
+                                          <div class="cart-product-imitation">
+                                          </div>
+                                      </td>
+                                      <td class="desc">
+                                          <h3>
+                                              <a href="./picturesGirls/girlsPic1.jpg" class="text-navy">
+                                                Girls Embroidered Ruffle Top
+                                              </a>
+                                          </h3>
+                                          <p class="small">
+                                             THE PERFECT FOUNDATION PIECE FOR CASUAL OUTFITS, OUR T-SHIRTS ARE COMFORTABLE AND SOFT.
+                                          </p>
+                                      
+                                          <div class="m-t-sm">
+                                              
+                                              <a href="#" class="text-muted"><i class="fa fa-trash"></i> Remove item</a>
+                                          </div>
+                                      </td>
+      
+                                      <td>
+                                          $35,97
+                                      </td>
+                                      <td width="65">
+                                          <input type="text" class="form-control" placeholder="1">
+                                      </td>
+                                      <td>
+                                          <h4>
+                                              $35,97
+                                          </h4>
+                                      </td>
+      
+                                  </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+      
+                      </div>
+                      
+                      <div class="ibox-content">
+                          <button class="btn btn-primary pull-right"><i class="fa fa fa-shopping-cart"></i> Checkout</button>
+                          <button class="btn btn-white"><i class="fa fa-arrow-left"></i> Continue shopping</button>
+      
+                      </div>
+                  </div>
+      
+              </div>
+              <div class="col-md-3">
+                  <div class="ibox">
+                      <div class="ibox-title">
+                          <h5>Cart Summary</h5>
+                      </div>
+                      <div class="ibox-content">
+                          <span>
+                              Total
+                          </span>
+                          <h2 class="font-bold">
+                              $127,90
+                          </h2>
+      
+                          <hr>
+                          
+                          <div class="m-t-sm">
+                              <div class="btn-group">
+                              <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-shopping-cart"></i> Checkout</a>
+                              <a href="#" class="btn btn-white btn-sm"> Cancel</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <div class="ibox">
+                      <div class="ibox-title">
+                          <h5>Support</h5>
+                      </div>
+                      <div class="ibox-content text-center">
+                          <h3><i class="fa fa-phone"></i> +43 100 783 001</h3>
+                          <span class="small">
+                              Please contact with us if you have any questions. We are avalible 24h.
+                          </span>
+                      </div>
+                  </div>
+      
+                  <div class="ibox">
+                      <div class="ibox-content">
+      
+                          <p class="font-bold">
+                          Other products you may be interested
+                          </p>
+                          <hr>
+                          <div>
+                              <a href="./girls.html" class="product-name"> Girls outfit</a>
+                              <div class="small m-t-xs">
+                                Lorem ipsum may be used as a placeholder before the final copy is available.
+                              </div>
+                              <div class="m-t text-righ">
+      
+                              </div>
+                          </div>
+                          <hr>
+                          <div>
+                              <a href="./boys.html" class="product-name"> Boy's outfit</a>
+                              <div class="small m-t-xs">
+                                Lorem ipsum may be used as a placeholder before the final copy is available.
+                              </div>
+                              <div class="m-t text-righ">
+      
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-    </main>
-
-
-  </div>
-
-  <footer class="raw; text-center " >
+      </div>
+  <footer class="raw; text-center " style="padding-top: 2%;" >
     <!-- <h1  style="color: pink; padding: 4%">FIXIKI Kids</h1> -->
-    <h2  style="background-color: pink; color: black; padding: 0.7% ;">FREE SHIPPING on Every Purchase 24/7/365!</h2>
+    <h2  style="background-color: lightblue color: black; padding: 0.7% ;">FREE SHIPPING on Every Purchase 24/7/365!</h2>
     <img  style="width: 100% ; margin: 2% auto 5%;" src="./picturesGirls/allGirlsWidth.gif">
 
  
