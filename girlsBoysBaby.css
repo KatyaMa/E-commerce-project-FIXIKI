@@ -69,7 +69,13 @@ h4{
 }
  
 .jumbotron5 {
-    background: url(./picturesGirls/Clearance.jpeg) no-repeat center;
+    background: url(./picturesGirls/allProducts.png) no-repeat center;
     background-size: cover;
     height: 100vh;
 }
+
+
+.logo{
+    width: 10em;
+    height: 3em;
+  } 
