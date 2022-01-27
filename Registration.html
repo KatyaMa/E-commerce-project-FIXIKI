@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,99 +55,70 @@
     </nav>
   </header>
 
-<div class="container text-start">
-
-    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+  <div class="container ">
+    <form   th:action="@{/process_register}" method="post" th:object="${user}">
 <fieldset>
 
 <!-- Form Name -->
 <br>
-<legend><h2><b><center>Create a new account</center></b></h2 ></legend><br>
+<legend><h2 class="text-center"><b>Create a new account</b></h2 ></legend><br>
 
-  <!-- Text input-->
- <div class="container">
- <br>  
-<div class="form-group d-flex justify-content-center " >
-  <label class="col-md-4 control-label">E-Mail</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text" id="regEmail">
-    </div>
-  </div>
-</div>
 
-<!-- Text input-->
-<br>
-<div class="form-group d-flex justify-content-center" >
  
-  <label class="col-md-4 control-label" >Password</label> 
-    <div class="col-md-4 inputGroupContainer ">
-    <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="user_password" placeholder="Password" class="form-control"  type="password" id="regPassword">
+ 
+<div class="m-3">
+  <div class="form-group row">
+    <label class="col-form-label col-4">E-mail</label>
+    <div class="col-12">
+      <input type="email" class="form-control" th:field="{email}" required minlength="6" maxlength="70"/>
     </div>
   </div>
-</div>
 
-
-<!-- Text input-->
-<br>
-<div class="form-group d-flex justify-content-center" >
-  <label class="col-md-4 control-label">First Name</label>  
-  <div class="col-md-4 inputGroupContainer">
-  <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="first_name" placeholder="First Name" class="form-control"  type="text" id="regFirstName">
+  <div class="form-group row">
+    <label class="col-form-label col-4">Password</label>
+    <div class="col-12">
+      <input type="password" class="form-control" th:field="{password}"required minlength="6" maxlength="20"/>
     </div>
   </div>
-</div>
 
-<!-- Text input-->
-<br>
-<div class="form-group d-flex justify-content-center">
-  <label class="col-md-4 control-label" >Last Name</label> 
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input name="last_name" placeholder="Last Name" class="form-control"  type="text" id="regLastName">
+  <div class="form-group row">
+    <label class="col-form-label col-4">First name</label>
+    <div class="col-12">
+      <input type="text" class="form-control" th:field="{firstName}"required minlength="2" maxlength="20"/>
     </div>
   </div>
-</div>
+
+  <div class="form-group row">
+    <label class="col-form-label col-4">Last name</label>
+    <div class="col-12">
+      <input type="text" class="form-control" th:field="{lastName}" required minlength="2" maxlength="20"/>
+    </div>
+  </div>
 
 
-
-
-
-<!-- Text input-->
-<br>     
-<div class="form-group d-flex justify-content-center" >
+  
+<!-- <div class="form-group d-flex justify-content-center" >
   <label class="col-md-4 control-label">Contact No.</label>  
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
   <input name="contact_no" placeholder="(123)4567899" class="form-control" type="text" id="regContactNumber">
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Button -->
 
-<div class="form-group d-flex justify-content-start " >
-  <label class="col-md-4 control-label  "></label>
-  <div class="col-md-4"><br><center>
- <button type="submit" class="btn btn-lg" id="addUserButton">Submit <span class="glyphicon glyphicon-send"></span></button>
-</center></div>
+<div class="form-group d-flex justify-content-center " >
+ <button type="submit" class="btn btn-lg" > Submit </button>
 </div>
 </div> 
 
-</fieldset>
+
 </form>
 </div>
-    </div>
-    <script src="./registrationController.js"></script>
-    <script src="./Registration.js"></script>
-
+  
+  
+  </form>
  <!--- Footer --->
 
  <footer class="raw; text-center " style="padding: 20% auto; background-image: linear-gradient(to right,rgb(253, 141, 253), rgb(184, 248, 248));">
