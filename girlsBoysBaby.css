@@ -94,17 +94,17 @@ h4{
 }
 @media screen and (max-width:400px) {
     .jumbotron1 {
-    display: none;
+    background: none;
     };
 }
 @media screen and (max-width:400px) {
     .jumbotron2 {
-    display: none;
+        background: none;
     };
 }
 @media screen and (max-width:400px) {
     .jumbotron3 .jumbotron4 .jumbotron5 .jumbotron6 {
-    display: none;
+        background: none;
     };
 }
     
