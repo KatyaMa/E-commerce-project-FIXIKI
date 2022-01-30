@@ -102,11 +102,36 @@ h4{
 @media screen and (max-width:400px) {
     .jumbotron2 {
         background: none;
+        width: 100%;
+        height: auto;
     };
 }
 @media screen and (max-width:400px) {
-    .jumbotron3 .jumbotron4 .jumbotron5 .jumbotron6 {
+    .jumbotron3 {
         background: none;
+        width: 100%;
+        height: auto;
+    };
+}
+@media screen and (max-width:400px) {
+    .jumbotron4  {
+        background: none;
+        width: 100%;
+        height: auto;
+    };
+}
+@media screen and (max-width:400px) {
+    .jumbotron5 {
+        background: none;
+        width: 100%;
+        height: auto;
+    };
+}
+@media screen and (max-width:400px) {
+     .jumbotron6 {
+        background: none;
+        width: 100%;
+        height: auto;
     };
 }
     
