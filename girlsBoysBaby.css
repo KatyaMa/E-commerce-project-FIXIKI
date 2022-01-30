@@ -88,17 +88,11 @@ h4{
 
 
   @media screen and (max-width:400px) {
-    .col-2 {
-    display:none;
+    .col-2 .jumbotron1 .jumbotron2 .jumbotron3 .jumbotron4 .jumbotron5 .jumbotron6 {
+    display: none;
     };
 }
 
-@media screen and (max-width:400px) {
-    .jumbotron1 {
-        width: 100%;
-        height: auto;
-        background-size:auto;
-    }
-}
+
     
     
