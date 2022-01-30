@@ -88,11 +88,23 @@ h4{
 
 
   @media screen and (max-width:400px) {
-    .col-2 .jumbotron1 .jumbotron2 .jumbotron3 .jumbotron4 .jumbotron5 .jumbotron6 {
+    .col-2 {
     display: none;
     };
 }
-
-
-    
+@media screen and (max-width:400px) {
+    .jumbotron1 {
+    display: none;
+    };
+}
+@media screen and (max-width:400px) {
+    .jumbotron2 {
+    display: none;
+    };
+}
+@media screen and (max-width:400px) {
+    .jumbotron3 .jumbotron4 .jumbotron5 .jumbotron6 {
+    display: none;
+    };
+}
     
