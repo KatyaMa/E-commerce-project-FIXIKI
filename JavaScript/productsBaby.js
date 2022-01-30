@@ -1,7 +1,7 @@
 // Get initial baby girls
 const babyGirls = document.getElementById('babyGirls');
 
-getBabyGirls("http://localhost:8080/products/type/BABYGIRL")
+getBabyGirls("https://vast-eyrie-48149.herokuapp.com/products/type/BABYGIRL")
 
 //FETCHING PRODUCTS BABY GIRLS BY URL
 async function getBabyGirls(url){
@@ -49,7 +49,7 @@ function showBabyGirls(data){
 // Get initial baby boys
 const babyBoys = document.getElementById('babyBoys');
 
-getBabyBoys("http://localhost:8080/products/type/BABYBOY")
+getBabyBoys("https://vast-eyrie-48149.herokuapp.com/products/type/BABYBOY")
 
 //FETCHING PRODUCTS BABY BOYS BY URL
 async function getBabyBoys(url){

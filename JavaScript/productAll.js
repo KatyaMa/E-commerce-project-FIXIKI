@@ -1,7 +1,7 @@
 // Get initial movies
 const main = document.getElementById('main');
 
-getProducts("http://localhost:8080/products")
+getProducts("https://vast-eyrie-48149.herokuapp.com/products")
 
 //FETCHING PRODUCTS BY URL
 async function getProducts(url){

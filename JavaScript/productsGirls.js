@@ -1,7 +1,7 @@
 // Get initial girls tops
 const mainGirls = document.getElementById('girlsTops');
 
-getGirlsTops("http://localhost:8080/products/type/GIRLSTOPS")
+getGirlsTops("https://vast-eyrie-48149.herokuapp.com/products/type/GIRLSTOPS")
 
 //FETCHING PRODUCTS GIRLS TOPS BY URL
 async function getGirlsTops(url){
@@ -47,7 +47,7 @@ function showGirlsTops(data){
 // Get initial girls bottoms
 const girlsBottoms = document.getElementById('girlsBottoms');
 
-getGirlsBottoms("http://localhost:8080/products/type/GIRLSBOTTOMS")
+getGirlsBottoms("https://vast-eyrie-48149.herokuapp.com/products/type/GIRLSBOTTOMS")
 
 //FETCHING PRODUCTS GIRLS BOTTOMS BY URL
 async function getGirlsBottoms(url){
@@ -96,7 +96,7 @@ function showGirlsBottoms(data){
 // Get initial girls Accessories
 const girlsAccessories = document.getElementById('girlsAccessories');
 
-getGirlsAccessories("http://localhost:8080/products/type/GIRLSACCESSORIES")
+getGirlsAccessories("https://vast-eyrie-48149.herokuapp.com/products/type/GIRLSACCESSORIES")
 
 //FETCHING PRODUCTS GIRLS Accessories BY URL
 async function getGirlsAccessories(url){
@@ -141,7 +141,7 @@ function showGirlsAccessories(data){
 // Get initial girls Pajamas
 const girlsPajamas = document.getElementById('girlsPajamas');
 
-getGirlsPajamas("http://localhost:8080/products/type/GIRLSPAJAMAS")
+getGirlsPajamas("https://vast-eyrie-48149.herokuapp.com/products/type/GIRLSPAJAMAS")
 
 //FETCHING PRODUCTS GIRLS Pajamas BY URL
 async function getGirlsPajamas(url){
