@@ -90,5 +90,8 @@ h4{
   @media screen and (max-width:400px) {
     .col-2 {
     display:none;
+    };
+    .jumbotron1 {
+        width: 100%;
     }
     }
