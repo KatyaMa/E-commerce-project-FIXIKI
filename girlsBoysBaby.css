@@ -95,6 +95,8 @@ h4{
 @media screen and (max-width:400px) {
     .jumbotron1 {
     background: none;
+    width: 100%;
+    height: auto;
     };
 }
 @media screen and (max-width:400px) {
