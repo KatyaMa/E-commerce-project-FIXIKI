@@ -1,2 +1,1 @@
-# final-project
-https://katyama.github.io/final-project-FIXIKI/
+# E-commerce project FIXIKI
